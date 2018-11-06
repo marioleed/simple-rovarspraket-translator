@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moe.Rövarspråket.UnitTests", "Moe.Rövarspråket.UnitTests\Moe.Rövarspråket.UnitTests.csproj", "{2F2642D8-DB8D-436A-A5FA-177BBE428189}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moe.Rövarspråket.TranslatorConsole", "Moe.Rövarspråket.TranslatorConsole\Moe.Rövarspråket.TranslatorConsole.csproj", "{2F939B2D-752D-4F5B-9FDE-6790CA95C781}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F2642D8-DB8D-436A-A5FA-177BBE428189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F2642D8-DB8D-436A-A5FA-177BBE428189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F2642D8-DB8D-436A-A5FA-177BBE428189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F2642D8-DB8D-436A-A5FA-177BBE428189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F939B2D-752D-4F5B-9FDE-6790CA95C781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F939B2D-752D-4F5B-9FDE-6790CA95C781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F939B2D-752D-4F5B-9FDE-6790CA95C781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F939B2D-752D-4F5B-9FDE-6790CA95C781}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02C2CB2D-239A-48DA-87C7-48867CB6ADB0}
+	EndGlobalSection
+EndGlobal
