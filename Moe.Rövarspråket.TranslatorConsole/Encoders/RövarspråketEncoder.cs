@@ -1,11 +1,12 @@
 using System.Linq;
 using System.Text;
+using Moe.Rövarspråket.TranslatorConsole.Config;
 
 namespace Moe.Rövarspråket.TranslatorConsole.Encoders
 {
     public class RövarspråketEncoder : IRövarspråketEncoder
     {
-        private readonly char[] _consonants = { 'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z' };
+        private readonly char[] _consonants = RövarspråketConfig.Consonants.ToCharArray();
 
         public string Encode(string input)
         {
@@ -17,7 +18,7 @@ namespace Moe.Rövarspråket.TranslatorConsole.Encoders
 
                 var lowerCaseChar = char.ToLower(character);
                 if (_consonants.Contains(lowerCaseChar))
-                    builder.AppendFormat("o" + lowerCaseChar);
+                    builder.AppendFormat(RövarspråketConfig.Filler + lowerCaseChar);
             }
 
             return builder.ToString();

@@ -1,4 +1,5 @@
 using System.Text.RegularExpressions;
+using Moe.Rövarspråket.TranslatorConsole.Config;
 
 namespace Moe.Rövarspråket.TranslatorConsole.Encoders
 {
@@ -6,7 +7,9 @@ namespace Moe.Rövarspråket.TranslatorConsole.Encoders
     {
         public string Encode(string input)
         {
-            return Regex.Replace(input, "([bcdfghjklmnpqrstvwxz])", c => c.Value + "o" + c.Value.ToLower(), RegexOptions.IgnoreCase);
+            string Evaluator(Match c) => c.Value + RövarspråketConfig.Filler + c.Value.ToLower();
+
+            return Regex.Replace(input, $"([{RövarspråketConfig.Consonants}])", Evaluator, RegexOptions.IgnoreCase);
         }
     }
 }
